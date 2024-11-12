@@ -17,7 +17,6 @@ The installed font is called `Jiting` for some reasons.
 Run:
 ```bash
 python split_training_text.py
-python clean_error_null_box.py
 ```
 
 ### Train the model
