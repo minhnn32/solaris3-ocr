@@ -2,7 +2,7 @@
 An OCR system for Wuthering Waves Solaris-3 language.
 
 ## Dataset
-Synthetic dataset generated using Solaris-3 font from NathLWX.
+Synthetic dataset generated using Solaris-3 font shared by NathLWX.
 Here is a link to his thread: [Reddit](https://www.reddit.com/r/WutheringWaves/comments/1fj6vgk/the_font_files_for_wuwas_fictional_scriptalphabet/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 The text used to generate this synthetic dataset are from Wikipedia.
