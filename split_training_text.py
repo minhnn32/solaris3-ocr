@@ -34,8 +34,10 @@ lines = lines[:count]
 
 line_count = 0
 for line in lines:
-    # only use alphabet
-    line = ''.join([c.lower() for c in line if c.isalpha() or c.isspace()])
+    # lowercase the line
+    line = line.lower()
+    # trim the line
+    line = line[:100]
     training_text_file_name = pathlib.Path(training_text_file).stem
     line_training_text = os.path.join(output_directory, f'{training_text_file_name}_{line_count}.gt.txt')
     with open(line_training_text, 'w') as output_file:
@@ -46,14 +48,14 @@ for line in lines:
     subprocess.run([
         'text2image',
         # '--fonts_dir=font',
-        '--font=Jiting',
+        '--font=Solaris3Arial',
         f'--text={line_training_text}',
         f'--outputbase={output_directory}/{file_base_name}',
         '--max_pages=1',
         '--strip_unrenderable_words',
         '--leading=12',
         '--xsize=4800',
-        '--ysize=560',
+        '--ysize=400',
         '--char_spacing=0.0',
         '--exposure=0',
         '--unicharset_file=langdata/eng.unicharset'
